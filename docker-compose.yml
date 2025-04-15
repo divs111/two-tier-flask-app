@@ -23,7 +23,7 @@ services:
       start_period: 60s
 
   flask-app:
-    image: trainwithshubham/two-tier-flask-app:latest
+    image: divs11/two-tier:latest
     container_name: flask-app
     ports:
       - "5000:5000"
