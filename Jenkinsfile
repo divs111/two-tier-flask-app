@@ -43,20 +43,20 @@ post {
         success{
             script{
             emailext (
-                from : "sonidivya638@gmail.com",
+                from : "sonidivya157@gmail.com",
                 subject : "Build Successfull",
                 body: "Good New,Build was successfull",
-                to: "sonidivya638@gmail.com"
+                to: "sonidivya157@gmail.com"
                 )
         }
         }
         failure {
             script{
             emailext (
-                from : "sonidivya638@gmail.com",
+                from : "sonidivya157@gmail.com",
                 subject: "Build Failed",
                 body: "Your build was failed",
-                to : "sonidivya638@gmail.com"
+                to : "sonidivya157@gmail.com"
                 )
         }
         }
