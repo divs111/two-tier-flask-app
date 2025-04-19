@@ -41,6 +41,7 @@ pipeline{
     }
 post {
         success{
+            script{
             emailext (
                 from : "sonidivya638@gmail.com",
                 subject : "Build Successfull",
@@ -48,13 +49,16 @@ post {
                 to: "sonidivya638@gmail.com"
                 )
         }
+        }
         failure {
+            script{
             emailext (
                 from : "sonidivya638@gmail.com",
                 subject: "Build Failed",
                 body: "Your build was failed",
                 to : "sonidivya638@gmail.com"
                 )
+        }
         }
     }
 }
