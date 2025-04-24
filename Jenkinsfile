@@ -8,7 +8,8 @@ pipeline{
         }
         stage("Build"){
             steps{
-                sh "docker system prune -af"
+                sh "docker system prune -af",
+                sh "sudo chown -R ubuntu /home/ubuntu/jenkins/workspace/demo-first-job/mysql-data",
                 sh "docker build -t two-tier ."
                 
             }
