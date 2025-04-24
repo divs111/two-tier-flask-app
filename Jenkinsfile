@@ -44,14 +44,14 @@ post {
                 mail from : "sonidivya638@gmail.com",
                 subject : "Build Successfull",
                 body: "Good New,Build was successfull",
-                to: "sonidivya638@gmail.com",
+                to: "sonidivya638@gmail.com"
                 
         }
         failure {
                 mail from : "sonidivya638@gmail.com",
                 subject: "Build Failed",
                 body: "Your build was failed",
-                to : "sonidivya638@gmail.com",
+                to : "sonidivya638@gmail.com"
                 
         }
     }
