@@ -41,24 +41,18 @@ pipeline{
     }
 post {
         success{
-            script{
-                emailext from : "sonidivya638@gmail.com",
+                mail from : "sonidivya638@gmail.com",
                 subject : "Build Successfull",
                 body: "Good New,Build was successfull",
                 to: "sonidivya638@gmail.com",
-                debugMode: true  // ← Adds SMTP logs to console
                 
         }
-        }
         failure {
-            script{
-                emailext from : "sonidivya638@gmail.com",
+                mail from : "sonidivya638@gmail.com",
                 subject: "Build Failed",
                 body: "Your build was failed",
                 to : "sonidivya638@gmail.com",
-                debugMode: true  // ← Adds SMTP logs to console
                 
-        }
         }
     }
 }
